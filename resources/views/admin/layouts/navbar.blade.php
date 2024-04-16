@@ -164,12 +164,13 @@
 				<li class="nav-item">
 					<a href="#" class="nav-link">
 						<i class="link-icon" data-feather="archive"></i>
-						<span class="menu-title">Archivos</span>
+						<span class="menu-title">Administrador</span>
 						<i class="link-arrow"></i>
 					</a>
 					<div class="submenu">
 						<ul class="submenu-item">
-							<li class="nav-item"><a class="nav-link" href="pages/forms/basic-elements.html">Recividos</a></li>
+							<li class="nav-item"><a class="nav-link" href="pages/forms/basic-elements.html">Archivos recividos</a></li>
+							<li class="nav-item"><a class="nav-link" href="{{route('admin.roles.index')}}">Roles de usuarios</a></li>
 							<li class="nav-item"><a class="nav-link" href="pages/forms/advanced-elements.html">Otros</a></li>
 						</ul>
 					</div>
@@ -190,7 +191,7 @@
 				<li class="nav-item">
 					<a href="#" class="nav-link">
 						<i class="link-icon" data-feather="users"></i>
-						<span class="menu-title">Aminstración</span>
+						<span class="menu-title">Dirección de la U E</span>
 						<i class="link-arrow"></i>
 					</a>
 					<div class="submenu">

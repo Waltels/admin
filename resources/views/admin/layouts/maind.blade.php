@@ -32,6 +32,7 @@ License: For each use you must have a valid license purchased only from above li
 	<!-- Plugin css for this page -->
 	<link rel="stylesheet" href="{{asset('vendors/flatpickr/flatpickr.min.css')}}">
 	<link rel="stylesheet" href="{{asset('vendors/datatables.net-bs5/dataTables.bootstrap5.css')}}">
+	<link rel="stylesheet" href="{{asset('vendors/sweetalert2/sweetalert2.min.css')}}">
 	<!-- End plugin css for this page -->
 
 	<!-- inject:css -->
@@ -46,6 +47,8 @@ License: For each use you must have a valid license purchased only from above li
   <link rel="shortcut icon" href="{{asset('images/favicon.png')}}" />
 
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+  @stack('css')
 </head>
 <body>
 	<div class="main-wrapper">
@@ -85,14 +88,20 @@ License: For each use you must have a valid license purchased only from above li
 	<!-- Plugin js for this page -->
 	<script src="{{asset('vendors/datatables.net/jquery.dataTables.js')}}"></script>
 	<script src="{{asset('vendors/datatables.net-bs5/dataTables.bootstrap5.js')}}"></script>
+	<script src="{{asset('js/sweet-alert.js')}}"></script>
 	  <!-- End plugin js for this page -->
 
 	<!-- Custom js for this page -->
   <script src="{{asset('js/dashboard-light.js')}}"></script>
   <script src="{{asset('js/data-table.js')}}"></script>
 	<!-- End custom js for this page -->
+	@if (session('swal'))
+		<script>
+			Swal.fire(@json(session('swal')))
+		</script>
+	@endif
 
-	
+	@stack('js')
 
 </body>
 </html>    

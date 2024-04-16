@@ -8,23 +8,11 @@
             <li class="breadcrumb-item active" aria-current="page">Basic Elements</li>
         </ol>
     </nav>
+ 
     <div class="row justify-content-center">
         <div class="col-md-6 grid-margin stretch-card">
-           
             <div class="card">
-                <div>
-                    @if ($message=Session::get('message'))
-                    <script>
-                        Swal.fire({
-                            title: "Exiito!",
-                            text: "Su Archivo se envio correctamente!",
-                            icon: "success"
-                            });
-                    </script>
-                    @endif
-                </div>
                 <div class="card-body">
-
                     <h6 class="card-title text-center mb-5">Enviar documentos a la Dirección de la Unidad Educativa Alemania</h6>
 
                     <form method="POST" id="upload-file" action="{{route('file.store')}}" enctype="multipart/form-data" class="forms-sample">
@@ -43,7 +31,6 @@
                         </div>
                         <button type="submit" class="btn btn-primary me-2">Enviar</button>
                     </form>
-
                 </div>
             </div>
         </div>
