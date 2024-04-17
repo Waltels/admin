@@ -147,13 +147,14 @@
 						<span class="menu-title">Inicio</span>
 					</a>
 				</li>
-
+				@can('Dashboard')
 				<li class="nav-item">
 					<a class="nav-link" href="{{route('admin.dashboard')}}">
 						<i class="link-icon" data-feather="box"></i>
 						<span class="menu-title">Escritorio</span>
 					</a>
 				</li>
+				@endcan
 
 				<li class="nav-item">
 					<a href="{{route('file.index')}}" class="nav-link">
@@ -161,6 +162,9 @@
 						<span class="menu-title">Docente</span>
 					</a>
 				</li>
+				@can('Administracion')
+					
+				
 				<li class="nav-item">
 					<a href="#" class="nav-link">
 						<i class="link-icon" data-feather="archive"></i>
@@ -171,10 +175,13 @@
 						<ul class="submenu-item">
 							<li class="nav-item"><a class="nav-link" href="pages/forms/basic-elements.html">Archivos recividos</a></li>
 							<li class="nav-item"><a class="nav-link" href="{{route('admin.roles.index')}}">Roles de usuarios</a></li>
+							<li class="nav-item"><a class="nav-link" href="{{route('admin.users.index')}}">Asignar rol a usuarios</a></li>
 							<li class="nav-item"><a class="nav-link" href="pages/forms/advanced-elements.html">Otros</a></li>
 						</ul>
 					</div>
 				</li>
+				@endcan
+				@can('Administracion')
 				<li class="nav-item">
 					<a href="#" class="nav-link">
 						<i class="link-icon" data-feather="monitor"></i>
@@ -188,6 +195,8 @@
 						</ul>
 					</div>
 				</li>
+				@endcan
+				@can('Administracion')
 				<li class="nav-item">
 					<a href="#" class="nav-link">
 						<i class="link-icon" data-feather="users"></i>
@@ -219,6 +228,7 @@
 						</div>
 					</div>
 				</li>
+				@endcan
 				<li class="nav-item">
 					<a href="#" class="nav-link">
 						<i class="link-icon" data-feather="tag"></i>
