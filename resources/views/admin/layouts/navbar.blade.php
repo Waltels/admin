@@ -173,9 +173,10 @@
 					</a>
 					<div class="submenu">
 						<ul class="submenu-item">
-							<li class="nav-item"><a class="nav-link" href="pages/forms/basic-elements.html">Archivos recividos</a></li>
-							<li class="nav-item"><a class="nav-link" href="{{route('admin.roles.index')}}">Roles de usuarios</a></li>
+							<li class="nav-item"><a class="nav-link" href="{{route('admin.archivos')}}">Archivos recividos</a></li>
 							<li class="nav-item"><a class="nav-link" href="{{route('admin.users.index')}}">Asignar rol a usuarios</a></li>
+							<li class="nav-item"><a class="nav-link" href="{{route('admin.roles.index')}}">Roles de usuarios</a></li>
+							<li class="nav-item"><a class="nav-link" href="{{route('admin.documentos.index')}}">Documentos</a></li>
 							<li class="nav-item"><a class="nav-link" href="pages/forms/advanced-elements.html">Otros</a></li>
 						</ul>
 					</div>
