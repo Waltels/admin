@@ -33,20 +33,29 @@ License: For each use you must have a valid license purchased only from above li
 	<link rel="stylesheet" href="{{asset('vendors/flatpickr/flatpickr.min.css')}}">
 	<link rel="stylesheet" href="{{asset('vendors/datatables.net-bs5/dataTables.bootstrap5.css')}}">
 	<link rel="stylesheet" href="{{asset('vendors/sweetalert2/sweetalert2.min.css')}}">
+
+	<link rel="stylesheet" href="{{asset('vendors/easymde/easymde.min.css')}}">
+
+	<link rel="stylesheet" href="{{asset('vendors/dropify/dist/dropify.min.css')}}">
+	
 	<!-- End plugin css for this page -->
 
 	<!-- inject:css -->
 	<link rel="stylesheet" href="{{asset('fonts/feather-font/css/iconfont.css')}}">
 	<link rel="stylesheet" href="{{asset('vendors/flag-icon-css/css/flag-icon.min.css')}}">
+	<link rel="stylesheet" href="{{asset('vendors/flatpickr/flatpickr.min.css')}}">
 	<!-- endinject -->
 
   <!-- Layout styles -->  
 	<link rel="stylesheet" href="{{asset('css/demo3/style.css')}}">
   <!-- End layout styles -->
 
+  <link rel="stylesheet" href="lik">
+
   <link rel="shortcut icon" href="{{asset('images/favicon.png')}}" />
 
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="https://cdn.ckeditor.com/ckeditor5/41.3.1/classic/ckeditor.js"></script>
 
   @stack('css')
 </head>
@@ -94,12 +103,25 @@ License: For each use you must have a valid license purchased only from above li
 	<!-- Custom js for this page -->
   <script src="{{asset('js/dashboard-light.js')}}"></script>
   <script src="{{asset('js/data-table.js')}}"></script>
+
+    <script src="{{asset('js/tinymce.js')}}"></script>
+	<script src="{{asset('js/easymde.js')}}"></script>
+	<script src="{{asset('js/ace.js')}}"></script>
 	<!-- End custom js for this page -->
+
+	<script src="{{asset('vendors/dropify/dist/dropify.min.js')}}"></script>
+	<script src="{{asset('vendors/flatpickr/flatpickr.min.js')}}"></script>
+
+	<script src="{{asset('js/dropify.js')}}"></script>
+	<script src="{{asset('js/flatpickr.js')}}"></script>
+
 	@if (session('swal'))
 		<script>
 			Swal.fire(@json(session('swal')))
 		</script>
 	@endif
+
+		
 
 	@stack('js')
 

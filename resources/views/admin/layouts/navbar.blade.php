@@ -210,7 +210,7 @@
 								<ul class="submenu-item pe-md-0">
 									<li class="category-heading">Docentes</li>
 									<li class="nav-item"><a class="nav-link" href="../../pages/charts/apex.html">Organizacion</a></li>
-									<li class="nav-item"><a class="nav-link" href="../../pages/charts/chartjs.html">Permisos</a></li>
+									<li class="nav-item"><a class="nav-link" href="{{route('admin.permisos.index')}}">Permisos</a></li>
 									<li class="nav-item"><a class="nav-link" href="../../pages/charts/flot.html">Faltas</a></li>
 									<li class="nav-item"><a class="nav-link" href="../../pages/charts/peity.html">Comisiones</a></li>
 									<li class="nav-item"><a class="nav-link" href="../../pages/charts/sparkline.html">Otros</a></li>

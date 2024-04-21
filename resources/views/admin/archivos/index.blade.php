@@ -30,7 +30,7 @@
                         @foreach ($files as $file)
                         <tr>
                             <td>{{$file->id}}</td>
-                            <td>{{$file->user_id}}</td>
+                            <td>{{$file->user->name}}</td>
                             <td>{{$file->description}}</td>
                             <td>{{$file->created_at}}</td>
                             <td>
