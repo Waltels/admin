@@ -40,12 +40,7 @@
                             <td>
                                 <a href="{{route('admin.permisos.show', $permiso)}}" class="btn btn-sm btn-primary" ><i data-feather="eye"></i></a>
                             </td>
-                            <td>
-                                <a href="{{$permiso->path}}" class="btn btn-sm btn-success" target="_blank"><i data-feather="edit"></i></a>
-                            </td>
-                            <td>
-                                <a href="{{$permiso->path}}" class="btn btn-sm btn-danger" target="_blank"><i data-feather="delete"></i></a>
-                            </td>
+                           
                         </tr>
                         @endforeach
                         </tbody>

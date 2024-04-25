@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('permisos', function (Blueprint $table) {
+        Schema::create('permisoests', function (Blueprint $table) {
             $table->id();
             $table->string('motivo');
             $table->string('dias',2);
@@ -19,11 +19,10 @@ return new class extends Migration
             $table->string('dias2')->nullable();
             $table->string('dias3')->nullable();
             $table->string('obs',800);
-            $table->string('path')->nullable();
-            $table->unsignedBigInteger('user_id');
-            $table->foreign('user_id')
+            $table->unsignedBigInteger('estudiante_id');
+            $table->foreign('estudiante_id')
                   ->references('id')
-                  ->on('users')
+                  ->on('estudiantes')
                   ->onDelete('cascade');
             $table->timestamps();
         });
@@ -34,6 +33,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('permisos');
+        Schema::dropIfExists('permisoests');
     }
 };

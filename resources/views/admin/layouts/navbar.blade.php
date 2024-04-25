@@ -209,11 +209,13 @@
 							<div class="col-md-6">
 								<ul class="submenu-item pe-md-0">
 									<li class="category-heading">Docentes</li>
-									<li class="nav-item"><a class="nav-link" href="../../pages/charts/apex.html">Organizacion</a></li>
-									<li class="nav-item"><a class="nav-link" href="{{route('admin.permisos.index')}}">Permisos</a></li>
-									<li class="nav-item"><a class="nav-link" href="../../pages/charts/flot.html">Faltas</a></li>
-									<li class="nav-item"><a class="nav-link" href="../../pages/charts/peity.html">Comisiones</a></li>
-									<li class="nav-item"><a class="nav-link" href="../../pages/charts/sparkline.html">Otros</a></li>
+									<li class="nav-item"><a class="nav-link" href="{{route('admin.permisos.index')}}">Solicitudes de Permisos</a></li>
+									<li class="nav-item"><a class="nav-link" href="{{route('admin.peuser')}}">Permisos por Docente</a></li>
+									<li class="nav-item"><a class="nav-link" href="../../pages/charts/flot.html">Registro de Faltas</a></li>
+									<li class="nav-item"><a class="nav-link" href="../../pages/charts/peity.html">Faltas por Docente</a></li>
+									<li class="nav-item"><a class="nav-link" href="../../pages/charts/apex.html">Comisiones UE</a></li>
+									<li class="nav-item"><a class="nav-link" href="../../pages/charts/sparkline.html">Fechas Civicas</a></li>
+									<li class="nav-item"><a class="nav-link" href="../../pages/charts/apex.html">Otros</a></li>
 								</ul>
 							</div>
 							<div class="col-md-6">

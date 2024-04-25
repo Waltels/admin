@@ -28,7 +28,7 @@
                                 
                             </div>
                         </div>
-                        <button type="submit" class="btn btn-primary me-2">actualizar Rol</button>
+                        <button type="submit" class="btn btn-primary me-2">Actualizar Documneto</button>
                     </form> 
                 </div>
             </div>

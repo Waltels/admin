@@ -6,6 +6,7 @@ use App\Http\Controllers\Admin\ArchivoController;
 use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\DocumentoController;
 use App\Http\Controllers\Admin\PermisoController;
+use App\Http\Controllers\Admin\PeuserController;
 use App\Http\Controllers\Admin\RoleController;
 use App\Http\Controllers\Admin\UserController;
 
@@ -21,3 +22,7 @@ Route::get('archivos', [ArchivoController::class, 'index'])->name('archivos');
 Route::resource('documentos', DocumentoController::class)->names('documentos');
 
 Route::resource('permisos', PermisoController::class)->names('permisos');
+
+Route::get('peuser', [PeuserController::class, 'index']) ->name('peuser');
+
+Route::get('peuser/{permiso}', [PeuserController::class, 'show'])->name('peuser.show');

@@ -11,19 +11,14 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('permisos', function (Blueprint $table) {
+        Schema::create('faltas', function (Blueprint $table) {
             $table->id();
             $table->string('motivo');
-            $table->string('dias',2);
-            $table->string('dias1');
-            $table->string('dias2')->nullable();
-            $table->string('dias3')->nullable();
-            $table->string('obs',800);
-            $table->string('path')->nullable();
-            $table->unsignedBigInteger('user_id');
-            $table->foreign('user_id')
+            $table->string('detalle',800);
+            $table->unsignedBigInteger('estudiante_id');
+            $table->foreign('estudiante_id')
                   ->references('id')
-                  ->on('users')
+                  ->on('estudiantes')
                   ->onDelete('cascade');
             $table->timestamps();
         });
@@ -34,6 +29,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('permisos');
+        Schema::dropIfExists('faltas');
     }
 };

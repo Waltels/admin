@@ -83,7 +83,9 @@ class PermisoController extends Controller
      */
     public function edit(Permiso $permiso)
     {
-        return view('admin.permisos.edit');
+
+
+        
     }
 
     /**
@@ -91,7 +93,7 @@ class PermisoController extends Controller
      */
     public function update(Request $request, Permiso $permiso)
     {
-        //
+        
     }
 
     /**
