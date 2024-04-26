@@ -10,7 +10,7 @@ class PeuserController extends Controller
 {
     
     public function index(){
-
+        
         return view('admin.puser.usuarios');
     }
 

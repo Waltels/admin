@@ -5,10 +5,10 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Permiso extends Model
+class Faltasdoc extends Model
 {
     protected $fillable = [
-        'motivo','dias', 'dias1','dias2','dias3', 'obs', 'path','user_id'
+        'motivo','fecha', 'accion','obs','user_id'
     ];
 
     //relacion uno a mnuchos invesa
@@ -16,5 +16,10 @@ class Permiso extends Model
     public function user(){
 
         return $this->belongsTo(User::class);
+    }
+
+    public function userfaltas(){
+
+        return $this->belongsTo(Faltasdoc::class);
     }
 }

@@ -53,10 +53,4 @@
 
 </div>
 
-
-
-
-<!-- Custom js for this page -->
-<script src="{{asset('js/data-table.js')}}"></script>
-<!-- End custom js for this page -->
 @endsection

@@ -211,8 +211,8 @@
 									<li class="category-heading">Docentes</li>
 									<li class="nav-item"><a class="nav-link" href="{{route('admin.permisos.index')}}">Solicitudes de Permisos</a></li>
 									<li class="nav-item"><a class="nav-link" href="{{route('admin.peuser')}}">Permisos por Docente</a></li>
-									<li class="nav-item"><a class="nav-link" href="../../pages/charts/flot.html">Registro de Faltas</a></li>
-									<li class="nav-item"><a class="nav-link" href="../../pages/charts/peity.html">Faltas por Docente</a></li>
+									<li class="nav-item"><a class="nav-link" href="{{route('admin.faltasdocs.index')}}">Registro de Faltas</a></li>
+									<li class="nav-item"><a class="nav-link" href="{{route('admin.fuser')}}">Faltas por Docente</a></li>
 									<li class="nav-item"><a class="nav-link" href="../../pages/charts/apex.html">Comisiones UE</a></li>
 									<li class="nav-item"><a class="nav-link" href="../../pages/charts/sparkline.html">Fechas Civicas</a></li>
 									<li class="nav-item"><a class="nav-link" href="../../pages/charts/apex.html">Otros</a></li>

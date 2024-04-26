@@ -73,4 +73,8 @@ class User extends Authenticatable
     public function permisos(){
         return $this->HasMany(Permiso::class);
     }
+
+    public function faltasdoc(){
+        return $this->HasMany(Faltasdoc::class);
+    }
 }

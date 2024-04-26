@@ -173,5 +173,5 @@
         console.log( error );
     } );
 
-        </script>
+    </script>
 @endsection

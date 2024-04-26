@@ -1,6 +1,4 @@
 <div>
-
-
     <div class="page-content">
 
         
@@ -22,7 +20,7 @@
                 <div class="card-header">
                     <div class="card-title">
                         <h4><span>Docente: </span>{{$nombre}}</h4>
-                        <p>En este espacio se detallan todos los registros de permisos  que el Docente  solicito a la Direccion de la Unidad Educativa Alemania</p>
+                        <p>En este espacio se detallan todos los registros de faltas del Docente  registradas en la Direccion de la Unidad Educativa Alemania</p>
                     </div>
                 </div>
             </div>
@@ -30,7 +28,7 @@
             <div class="text-center py-3">
                 <div class="card-header">
                     <div class="card-title">
-                        <h4>RESUMEN DE REGISTROS DE PERMISOS POR DOCENTE</h4>
+                        <h4>RESUMEN DE REGISTROS DE FALTAS POR DOCENTE</h4>
                         <p>Para poder obtener los datos de un Docente, seleccione el nombre para lisatar los registro que tiene</p>
                     </div>
                 </div>
@@ -39,19 +37,19 @@
         
 
             <div class="row">
-                @foreach ($permisos as $permiso)
+                @foreach ($faltasdocs as $faltasdoc)
 
                 <div class="col-12 col-md-6 col-xl-3 py-3">
                 <div class="card">
                     <div class="card-header">
-                    Fecha de solicitud del Permiso: {{$permiso->created_at}}
+                    Fecha de registro de la Falta: {{$faltasdoc->created_at}}
                     </div>
                     <div class="card-body">
-                        <h5 class="card-title">DATOS DEL PERMISO</h5>
-                        <p class="card-text mb-3">El docente {{$permiso->user->name}} solicito permiso por  motivo {{$permiso->motivo}}, durante {{$permiso->dias}} dias.</p>
+                        <h5 class="card-title">DATOS DE LA FALTA</h5>
+                        <p class="card-text mb-3">El docente {{$faltasdoc->user->name}} tiene registro de faltas por  motivo {{$faltasdoc->motivo}}, en fecha {{$faltasdoc->fecha}}.</p>
                     </div>
                     <div class="card-footer d-grid">
-                        <a href="{{route('admin.peuser.show', $permiso)}}" type="button" class="w-full btn btn-primary ">Detalle del permiso</a>  
+                        <a href="{{route('admin.fuser.show', $faltasdoc)}}" type="button" class="w-full btn btn-primary ">Detalle de la Falta</a>  
                     </div> 
                 </div>
                 </div>
@@ -59,5 +57,4 @@
             </div>
             </div>
     </div>
-
 </div>
