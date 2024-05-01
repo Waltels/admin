@@ -44,7 +44,13 @@ License: For each use you must have a valid license purchased only from above li
 	<link rel="stylesheet" href="{{asset('fonts/feather-font/css/iconfont.css')}}">
 	<link rel="stylesheet" href="{{asset('vendors/flag-icon-css/css/flag-icon.min.css')}}">
 	<link rel="stylesheet" href="{{asset('vendors/flatpickr/flatpickr.min.css')}}">
+	<link rel="stylesheet" href="{{asset('vendors/select2/select2.min.css')}}">
 	<!-- endinject -->
+	<!-- Plugin css for this page carrusel -->
+	<link rel="stylesheet" href="{{asset('vendors/owl.carousel/owl.carousel.min.css')}}">
+	<link rel="stylesheet" href="{{asset('vendors/owl.carousel/owl.theme.default.min.css')}}">
+	<link rel="stylesheet" href="{{asset('vendors/animate.css/animate.min.css')}}">
+	  <!-- End plugin css for this page -->
 
   <!-- Layout styles -->  
 	<link rel="stylesheet" href="{{asset('css/demo3/style.css')}}">
@@ -56,6 +62,8 @@ License: For each use you must have a valid license purchased only from above li
 
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <script src="https://cdn.ckeditor.com/ckeditor5/41.3.1/classic/ckeditor.js"></script>
+
+  <script src="{{ asset('js/tinymce/tinymce.min.js') }}" referrerpolicy="origin"></script>
 
   @stack('css')
 </head>
@@ -103,17 +111,29 @@ License: For each use you must have a valid license purchased only from above li
 	<!-- Custom js for this page -->
   <script src="{{asset('js/dashboard-light.js')}}"></script>
   <script src="{{asset('js/data-table.js')}}"></script>
+  
 
-    <script src="{{asset('js/tinymce.js')}}"></script>
-	<script src="{{asset('js/easymde.js')}}"></script>
+	<!-- Plugin js for this page  editor-->
+	{{-- <script src="{{asset('vendors/tinymce/tinymce.min.js')}}"></script> --}}
+	<script src="{{asset('vendors/ace-builds/src-min/ace.js')}}"></script>
+	<script src="{{asset('vendors/ace-builds/src-min/theme-chaos.js')}}"></script>
+	<script src="{{asset('vendors/select2/select2.min.js')}}"></script>
+	<!-- End plugin js for this page -->
+    <script src="{{asset('js/walter.js')}}"></script>
 	<script src="{{asset('js/ace.js')}}"></script>
-	<!-- End custom js for this page -->
+	<script src="{{asset('js/select2.js')}}"></script>
+	<!-- End custom assetjs for this page -->
+	<!-- Plugin js for this page carrosel -->
+	<script src="{{asset('vendors/owl.carousel/owl.carousel.min.js')}}"></script>
+	<script src="{{asset('vendors/jquery-mousewheel/jquery.mousewheel.js')}}"></script>
+	  <!-- End plugin js for this page -->
 
 	<script src="{{asset('vendors/dropify/dist/dropify.min.js')}}"></script>
 	<script src="{{asset('vendors/flatpickr/flatpickr.min.js')}}"></script>
 
 	<script src="{{asset('js/dropify.js')}}"></script>
 	<script src="{{asset('js/flatpickr.js')}}"></script>
+	<script src="{{asset('js/carousel-rtl.js')}}"></script>
 
 	@if (session('swal'))
 		<script>

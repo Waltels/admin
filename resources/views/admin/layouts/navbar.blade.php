@@ -16,9 +16,9 @@
 						<input type="text" class="form-control" id="navbarForm" placeholder="Search here...">
 					</div>
 				</form>
-				<div class="navbar-brand">
+				{{-- <div class="navbar-brand">
 					<p class="tx-16 fw-bolder"><span>Usuario: </span>{{ Auth::user()->name }}</p>
-				</div>
+				</div> --}}
 				<ul class="navbar-nav">
 					{{-- Codigo del notificaciones --}}
 					<li class="nav-item dropdown">
@@ -191,7 +191,7 @@
 					</a>
 					<div class="submenu">
 						<ul class="submenu-item">
-							<li class="nav-item"><a class="nav-link" href="pages/icons/feather-icons.html">Comunicados</a></li>
+							<li class="nav-item"><a class="nav-link" href="{{route('admin.comunicados.index')}}">Comunicados</a></li>
 							<li class="nav-item"><a class="nav-link" href="pages/icons/flag-icons.html">otros</a></li>
 						</ul>
 					</div>

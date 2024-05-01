@@ -57,9 +57,13 @@
                     <form method="POST" id="upload-file" action="{{route('file.store')}}" enctype="multipart/form-data" class="forms-sample">
                         @csrf
                         <div class="row mb-3">
-                            <label class="col-sm-3 col-form-label">Descripcion</label>
+                            <label class="col-sm-3 col-form-label">Documento a enviar </label>
                             <div class="col-sm-9">
-                                <input type="text" name="description"  class="form-control"   placeholder="Descripción">
+                                <select name="description" class="js-example-basic-multiple form-select" multiple="multiple" data-width="100%">
+                                   @foreach ($docs as $doc)  
+                                    <option value="{{$doc->name}}">{{$doc->name}}</option>
+                                    @endforeach
+                                </select>
                             </div>
                         </div>
                         <div class="row mb-3">

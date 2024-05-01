@@ -41,7 +41,7 @@
                                 <li><span class="text-body">{{$permiso->dias2}}</span></li>
                                 <li><span class="text-body">{{$permiso->dias3}}</span></li>
                             </ul>
-                            <p C>Para la solicitud del permiso se tiene las siguientes consideraciones: <span class="text-body  text-cyan-950">{{$permiso->obs}}</span></p>
+                            <p C>Para la solicitud del permiso se tiene las siguientes consideraciones: <span class="text-body  text-cyan-950">{!!$permiso->obs!!}</span></p>
                         </div>
                         <div class="p-3">
                             <p>Si el permiso estuvo solicitado de manera escrita se adjunta el documento:</p>

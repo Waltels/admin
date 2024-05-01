@@ -3,10 +3,12 @@
 namespace App\Http\Controllers\File;
 
 use App\Http\Controllers\Controller;
+use App\Models\Documento;
 use App\Models\File;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Redirect;
+use Illuminate\Support\Facades\Storage;
 
 class FileController extends Controller
 {
@@ -17,8 +19,8 @@ class FileController extends Controller
     
     public function create(){
 
-
-        return view('files.create');
+        $docs=Documento::all();
+        return view('files.create', compact('docs'));
     }
 
     public function store(Request $request)
@@ -50,4 +52,5 @@ class FileController extends Controller
         
         return Redirect()->route('file.index');
     }
+
 }

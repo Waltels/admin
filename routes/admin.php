@@ -3,8 +3,10 @@ use Illuminate\Support\Facades\Route;
 
 
 use App\Http\Controllers\Admin\ArchivoController;
+use App\Http\Controllers\Admin\ComunicadoController;
 use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\DocumentoController;
+use App\Http\Controllers\Admin\EscritorioController;
 use App\Http\Controllers\Admin\FaltasdocController;
 use App\Http\Controllers\Admin\PermisoController;
 use App\Http\Controllers\Admin\PeuserController;
@@ -36,3 +38,8 @@ Route::resource('faltasdocs', FaltasdocController::class)->names('faltasdocs');
 
 Route::get('fuser', [FuserController::class, 'index']) ->name('fuser');
 Route::get('fuser/{faltasdoc}', [FuserController::class, 'show'])->name('fuser.show');
+
+
+//Rutas para administrar el comunicados
+
+Route::resource('comunicados', ComunicadoController::class)->names('comunicados');

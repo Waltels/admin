@@ -93,7 +93,7 @@
                                     <div class="mb-3">
                                         <label class="form-label" >Acción a tomar</label>
                                         <div class="input-group flatpickr" id="flatpickr-date">
-                                            <textarea class="form-control" name="accion" id="accion" rows="2"></textarea>
+                                            <textarea class="form-control" name="accion" id="tinymceExample" rows="2"></textarea>
                                         </div>
                                     </div>
                                 </div>
@@ -102,7 +102,7 @@
                             <div class="mb-3">
                                 <div class="col-sm-12">
                                     <h4 class="card-title">Descricion de la Falta</h4>
-                                    <textarea class="form-control" name="obs" id="editor" rows="3"></textarea>
+                                    <textarea class="form-control" name="obs" id="tinymceExample" rows="3"></textarea>
                                 </div>
                             </div>
                             <button type="submit" class="btn btn-primary submit">Registrar la Falta</button>
@@ -112,5 +112,10 @@
         </div>
     </div>
 </div>
+<script>
+    tinymce.init({
+        selector: '#editor',
 
+    });
+</script>
 @endsection

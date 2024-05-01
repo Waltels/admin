@@ -36,6 +36,7 @@
                             <td>
                                 <a href="{{url('/'.$file->path)}}" class="btn btn-sm btn-primary" target="_blank"><i class="fa fa-download"></i> Ver</a>
                             </td>
+
                         </tr>
                         @endforeach
                         </tbody>

@@ -25,6 +25,11 @@ return Application::configure(basePath: dirname(__DIR__))
             ->name('file.')
             ->prefix('file')
             ->group(base_path('routes/file.php'));
+            /* RUTAS DE ESTUDIANTE*/
+            $router->middleware('web','auth')
+            ->name('estudiante.')
+            ->prefix('estudiante')
+            ->group(base_path('routes/estudiante.php'));
            }
     )
     ->withMiddleware(function (Middleware $middleware) {
