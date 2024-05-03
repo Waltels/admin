@@ -10,4 +10,9 @@ class Comunicado extends Model
     protected $fillable = [
         'name', 'content', 'fecha'
     ];
+
+    public function getRouteKeyName()
+    {
+        return 'id';
+    }
 }

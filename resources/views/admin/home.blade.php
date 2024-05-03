@@ -45,7 +45,7 @@
                           </a>
                           <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                             <a class="dropdown-item d-flex align-items-center" href="{{route('show', $comunicado)}}"><i data-feather="eye" class="icon-sm me-2"></i> <span class="">Ver</span></a>
-                            <a class="dropdown-item d-flex align-items-center" href="javascript:;"><i data-feather="printer" class="icon-sm me-2"></i> <span class="">Imprimir</span></a>
+                            <a class="dropdown-item d-flex align-items-center" href="{{route('admin.comunicados.pdf', $comunicado)}}" target="_blank"><i data-feather="printer" class="icon-sm me-2"></i> <span class="">Imprimir</span></a>
                           </div>
                         </div>
                       </div>

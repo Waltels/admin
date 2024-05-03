@@ -11,7 +11,7 @@ class ArchivoController extends Controller
 {
     public function index(){
 
-        $files = File::all();
+        $files = File::latest()->get();
         return view('admin.archivos.index', compact('files'));
     }
 }

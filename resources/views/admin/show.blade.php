@@ -14,11 +14,6 @@
                             <i data-feather="user-x" class="text-primary icon-lg me-2"></i>
                             <span>DETALLES DEL COMUNICADO</span>
                           </div>
-                          <div>
-                            <a class="me-2" type="button" data-bs-toggle="tooltip" data-bs-title="Forward"><i data-feather="share" class="text-muted icon-lg"></i></a>
-                            <a class="me-2" type="button" data-bs-toggle="tooltip" data-bs-title="Print"><i data-feather="printer" class="text-muted icon-lg"></i></a>
-                            <a type="button" data-bs-toggle="tooltip" data-bs-title="Delete"><i data-feather="trash" class="text-muted icon-lg"></i></a>
-                          </div>
                         </div>
                         <div class="d-flex align-items-center justify-content-between flex-wrap px-3 py-2 border-bottom">
                           <div class="d-flex align-items-center">

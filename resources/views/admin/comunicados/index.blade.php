@@ -34,7 +34,6 @@
                             <td>{{$comunicado->id}}</td>
                             <td>{{$comunicado->name}}</td>
                             <td>{{$comunicado->fecha}}</td>
-
                             <td width='10px'>
                                 <a href="{{route('admin.comunicados.show', $comunicado)}}" class="btn btn-sm btn-primary" ><i data-feather="eye"></i></a>
                             </td>
@@ -45,8 +44,7 @@
                                 <x-danger-button class="btn btn-danger"  onclick="deleteDocumento()">
                                     <i data-feather="delete"></i>
                                 </x-danger-button>
-                            </td> 
-                           
+                            </td>                          
                         </tr>
                         @endforeach
                         </tbody>

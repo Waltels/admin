@@ -13,9 +13,10 @@ class DashboardController extends Controller
 {
     public function dashboard(){
         $users= User::count();
+        $usuarios=User::all();
         $files= File::count();
         $permisos=Permiso::count();
         $faltasdocs=Faltasdoc::count();
-        return view('admin.dashboard', compact('users', 'files', 'permisos', 'faltasdocs'));
+        return view('admin.dashboard', compact('users', 'files', 'permisos', 'faltasdocs', 'usuarios'));
     }
 }

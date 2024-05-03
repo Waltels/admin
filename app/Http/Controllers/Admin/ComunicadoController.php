@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use App\Models\Comunicado;
+use Barryvdh\DomPDF\Facade\Pdf;
 use Illuminate\Http\Request;
 
 class ComunicadoController extends Controller
@@ -13,13 +14,23 @@ class ComunicadoController extends Controller
      */
     public function index()
     {
-        $comunicados=Comunicado::all();
+        $comunicados=Comunicado::latest()->get()->take(6);
         return view('admin.comunicados.index', compact('comunicados'));
     }
-
-    /**
-     * Show the form for creating a new resource.
+     /**
+     * Show the form for creating a new pdf.
      */
+    public function pdf(Comunicado $comunicado){
+
+        $comunicados=Comunicado::all();
+        $pdf = Pdf::loadView('admin.comunicados.pdf', compact('comunicados', 'comunicado'));
+        return $pdf->stream();
+
+     /**
+     * Show the form for creating a new resource.
+     */   
+    }
+    
     public function create()
     {
         return view('admin.comunicados.create');

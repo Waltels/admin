@@ -9,7 +9,7 @@
         </ol>
     </nav>
     <div class=" card col-md-5 mx-auto mb-2">
-    <a class="btn btn-primary px-2" href="{{route('file.create')}}">Registrar nuevo envio</a>
+    <a class="btn btn-primary px-2" href="{{route('file.create')}}">REGISTRAR NUEVO ENVIO</a>
     </div>
 
     <div class="row">
@@ -22,7 +22,7 @@
                     <table id="dataTableExample" class="table">
                         <thead>
                         <tr>
-                            <th>Nº de deocumento</th>
+                            <th>Nº de Documento</th>
                             <th>Descripcion del Documento</th>
                             <th>Fecha de envio del Documento</th>
                             <th>Acción</th>

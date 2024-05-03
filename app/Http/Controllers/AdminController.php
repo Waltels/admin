@@ -9,7 +9,7 @@ use Illuminate\Http\Request;
 class AdminController extends Controller
 {
     public function index(){
-        $comunicados=Comunicado::all();
+        $comunicados=Comunicado::latest()->get();
         return view('admin.home', compact('comunicados'));
     }
 

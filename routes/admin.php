@@ -41,5 +41,8 @@ Route::get('fuser/{faltasdoc}', [FuserController::class, 'show'])->name('fuser.s
 
 
 //Rutas para administrar el comunicados
+Route::get('comunicados/pdf/{comunicado}', [ComunicadoController::class, 'pdf'])->name('comunicados.pdf');
 
 Route::resource('comunicados', ComunicadoController::class)->names('comunicados');
+
+

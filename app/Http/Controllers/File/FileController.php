@@ -13,13 +13,13 @@ use Illuminate\Support\Facades\Storage;
 class FileController extends Controller
 {
     public function index(){
-        $files = File::where('user_id', Auth::id())->latest('id')->get();
+        $files = File::where('user_id', Auth::id())->latest()->get();
         return view('files.index', compact('files'));
     }
     
     public function create(){
 
-        $docs=Documento::all();
+        $docs=Documento::all(); 
         return view('files.create', compact('docs'));
     }
 

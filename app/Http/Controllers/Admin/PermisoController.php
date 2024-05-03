@@ -15,7 +15,7 @@ class PermisoController extends Controller
      */
     public function index()
     {
-        $permisos=Permiso::all();
+        $permisos=Permiso::latest()->get();;
         return view('admin.permisos.index', compact('permisos'));
     }
 
