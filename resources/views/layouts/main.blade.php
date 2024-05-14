@@ -34,7 +34,6 @@ License: For each use you must have a valid license purchased only from above li
 
 	<!-- inject:css -->
 	<link rel="stylesheet" href="{{asset('fonts/feather-font/css/iconfont.css')}}">
-	<link rel="stylesheet" href=".{{asset('vendors/flag-icon-css/css/flag-icon.min.css')}}">
 	<!-- endinject -->
 
   <!-- Layout styles -->  

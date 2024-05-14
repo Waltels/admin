@@ -213,8 +213,8 @@
 									<li class="nav-item"><a class="nav-link" href="{{route('admin.peuser')}}">Permisos por Docente</a></li>
 									<li class="nav-item"><a class="nav-link" href="{{route('admin.faltasdocs.index')}}">Registro de Faltas</a></li>
 									<li class="nav-item"><a class="nav-link" href="{{route('admin.fuser')}}">Faltas por Docente</a></li>
-									<li class="nav-item"><a class="nav-link" href="../../pages/charts/apex.html">Comisiones UE</a></li>
-									<li class="nav-item"><a class="nav-link" href="../../pages/charts/sparkline.html">Fechas Civicas</a></li>
+									<li class="nav-item"><a class="nav-link" href="{{route('admin.com')}}">Comisiones UE</a></li>
+									<li class="nav-item"><a class="nav-link" href="{{route('admin.cont')}}">Planificaciones</a></li>
 									<li class="nav-item"><a class="nav-link" href="../../pages/charts/apex.html">Otros</a></li>
 								</ul>
 							</div>

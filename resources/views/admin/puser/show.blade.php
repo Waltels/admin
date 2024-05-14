@@ -34,7 +34,7 @@
                         <div class="p-4 border-bottom">
                             <p>El docente <span class="text-body">{{$permiso->user->name}}</span>, presenta los siguientes datos de permiso solicitados a la Dirección de la Unidad Educativa Alemania.</p>
                             <br>
-                            <p>Motivo del permiso solicitado: <span class="text-body">{{$permiso->motivo}}</span>.</p>
+                            <p>Motivo del permiso solicitado: <span class="text-body">{!!$permiso->motivo!!}</span>.</p>
                             <p>El docente solicito <span class="text-body font-semibold">{{$permiso->dias}}</span> día(s) de permiso, el o los mismos que se concedieron en las siguientes fechas:</p> </p>
                             <ul>
                                 <li><span class="text-body">{{$permiso->dias1}}</span></li>

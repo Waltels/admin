@@ -56,8 +56,6 @@ License: For each use you must have a valid license purchased only from above li
 	<link rel="stylesheet" href="{{asset('css/demo3/style.css')}}">
   <!-- End layout styles -->
 
-  <link rel="stylesheet" href="lik">
-
   <link rel="shortcut icon" href="{{asset('images/favicon.png')}}" />
 
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>

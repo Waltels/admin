@@ -77,4 +77,11 @@ class User extends Authenticatable
     public function faltasdoc(){
         return $this->HasMany(Faltasdoc::class);
     }
+
+    public function asignacion(){
+        return $this->HasMany(Asignacion::class);
+    }
+    public function plan(){
+        return $this->HasMany(Plan::class);
+    }
 }

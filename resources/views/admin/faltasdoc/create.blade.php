@@ -93,7 +93,7 @@
                                     <div class="mb-3">
                                         <label class="form-label" >Acción a tomar</label>
                                         <div class="input-group flatpickr" id="flatpickr-date">
-                                            <textarea class="form-control" name="accion" id="tinymceExample" rows="2"></textarea>
+                                            <textarea class="form-control" name="accion"  rows="2"></textarea>
                                         </div>
                                     </div>
                                 </div>

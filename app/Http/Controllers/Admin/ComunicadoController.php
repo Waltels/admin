@@ -23,7 +23,7 @@ class ComunicadoController extends Controller
     public function pdf(Comunicado $comunicado){
 
         $comunicados=Comunicado::all();
-        $pdf = Pdf::loadView('admin.comunicados.pdf', compact('comunicados', 'comunicado'));
+        $pdf = Pdf::setPaper('letter')->loadView('admin.comunicados.pdf', compact('comunicados', 'comunicado'));
         return $pdf->stream();
 
      /**

@@ -37,9 +37,9 @@
                             <p>Motivo de la falta: <span class="text-body">{{$faltasdoc->motivo}}</span>.</p>
                             <p>El registro de la falta corresponde a la fecha: <span class="text-body fw-bold ">{{$faltasdoc->fecha}}</span>.</p> </p>
                 
-                            <p>Para el registro de la falta se tiene las siguientes consideraciones: <br> <span class="fw-bold fst-italic  text-cyan-950">{{$faltasdoc->obs}}</span></p>
+                            <p>Para el registro de la falta se tiene las siguientes consideraciones: <br> <span class="fw-bold fst-italic  text-cyan-950">{!!$faltasdoc->obs!!}</span></p>
                             <hr>
-                            <p>En estudio del caso se toma las siguientes acciones:  <br> <span class="fw-bold fst-italic">{{$faltasdoc->accion}}</span> </p>
+                            <p>En estudio del caso se toma las siguientes acciones:  <br> <span class="fw-bold fst-italic">{!!$faltasdoc->accion!!}</span> </p>
                         </div>
                         <div class="p-3">
                             
