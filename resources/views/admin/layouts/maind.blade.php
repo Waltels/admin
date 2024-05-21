@@ -63,6 +63,15 @@ License: For each use you must have a valid license purchased only from above li
 
   <script src="{{ asset('js/tinymce/tinymce.min.js') }}" referrerpolicy="origin"></script>
 
+  <style type="text/css">
+	td.wls {
+      width: 230px;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+	}
+  </style>
+
   @stack('css')
 </head>
 <body>

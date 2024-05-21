@@ -13,7 +13,7 @@ class DashboardController extends Controller
 {
     public function dashboard(){
         $users= User::count();
-        $usuarios=User::all();
+        $usuarios=User::latest('id')->paginate(6);
         $files= File::count();
         $permisos=Permiso::count();
         $faltasdocs=Faltasdoc::count();

@@ -35,7 +35,7 @@
                             <td>{{$file->description}}</td>
                             <td>{{$file->created_at}}</td>
                             <td>
-                                <a href="{{$file->path}}" class="btn btn-sm btn-primary" target="_blank"><i class="fa fa-download"></i> Ver</a>
+                                <a href="{{url('/'.$file->path)}}" class="btn btn-sm btn-primary" target="_blank"><i class="fa fa-download"></i> Ver</a>
                             </td>
                         </tr>
                         @endforeach

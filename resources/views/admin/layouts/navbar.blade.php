@@ -155,16 +155,25 @@
 					</a>
 				</li>
 				@endcan
-
 				<li class="nav-item">
 					<a href="{{route('file.index')}}" class="nav-link">
 						<i class="link-icon" data-feather="user"></i>
 						<span class="menu-title">Docente</span>
 					</a>
 				</li>
+				<li class="nav-item">
+					<a href="{{route('post.descargas')}}" class="nav-link">
+						<i class="link-icon" data-feather="download"></i>
+						<span class="menu-title">Descargas</span>
+					</a>
+				</li>
+				<li class="nav-item">
+					<a href="" class="nav-link">
+						<i class="link-icon" data-feather="home"></i>
+						<span class="menu-title">Publicaciones</span>
+					</a>
+				</li>
 				@can('Administracion')
-					
-				
 				<li class="nav-item">
 					<a href="#" class="nav-link">
 						<i class="link-icon" data-feather="archive"></i>
@@ -192,7 +201,8 @@
 					<div class="submenu">
 						<ul class="submenu-item">
 							<li class="nav-item"><a class="nav-link" href="{{route('admin.comunicados.index')}}">Comunicados</a></li>
-							<li class="nav-item"><a class="nav-link" href="pages/icons/flag-icons.html">otros</a></li>
+							<li class="nav-item"><a class="nav-link" href="{{route('post.categorias.index')}}">Categorias</a></li>
+							<li class="nav-item"><a class="nav-link" href="{{route('post.posts.index')}}">Post</a></li>
 						</ul>
 					</div>
 				</li>

@@ -3,7 +3,7 @@
 <div class="page-content ">
     <div class=" card col-md-5 mx-auto mb-2">
         <a class="btn btn-primary px-2" href="{{route('admin.documentos.create')}}">Registrar nuevo Documento</a>
-        </div>
+     </div>
     <div class="row mx-auto">
         <div class="col-md-6 grid-margin stretch-card mx-auto">
             <div class="card">
